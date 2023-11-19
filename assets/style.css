@@ -4,6 +4,7 @@
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 ::-webkit-scrollbar {
@@ -115,7 +116,7 @@ li {
 }
 
 section {
-  /width: max(80%, 600px);
+  width: max(80%, 600px);
   margin: 0 auto;
   padding-inline: 30px;
   transition: opacity 0.3s ease-in-out;
