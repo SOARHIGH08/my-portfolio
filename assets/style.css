@@ -121,13 +121,14 @@ li {
 }
 
 .section-cont {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 /* ZERO */
 section {
-  width: max(80%, 600px);
+  width: 100%;
   margin: 0 auto;
   padding-inline: 30px;
   transition: opacity 0.3s ease-in-out;
@@ -151,7 +152,7 @@ section {
 }
 
 .profession-img img {
-  width: 30%;
+  width: max(30%, 250px);
   margin: 25px;
   border-radius: 50px;
 }
@@ -175,7 +176,7 @@ section {
 }
 
 .single-img img {
-  width: min(80%, 500px);
+  width: min(80vh, 500px);
   margin: 25px;
   border-radius: 50px;
 }
