@@ -10,6 +10,11 @@
   display: none;
 }
 
+header {
+  width: 100%;
+  overflow: hidden;
+}
+
 .hero {
   height: 100%;
   width: 100%;
@@ -113,6 +118,11 @@ li {
   display: flex;
   position: sticky;
   top: 0;
+}
+
+.section-cont {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ZERO */
