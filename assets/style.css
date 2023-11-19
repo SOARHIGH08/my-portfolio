@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -11,30 +12,36 @@
 
 .hero {
   height: 100%;
-  background-color: #f1efef;
+  width: 100%;
+  background-color: #e1e1e1;
   color: #2c2b31;
-  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
+  font-family: "Raleway", sans-serif;
 }
 .text {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 35px);
   width: 80%;
   align-items: center;
   margin: 0 auto;
 }
 
 .hero-txt {
-  font-size: 50px;
+  width: 600px;
+
   transition: opacity 0.3s ease-in-out;
+}
+
+.hero-txt h1 {
+  font-size: clamp(40px, 7vw, 120px);
 }
 
 .profile-pic {
   position: fixed;
   top: 30%;
   left: 50%;
-  transform: translateX(50%);
+  transform: translate(50%, 0%);
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -108,18 +115,20 @@ li {
 }
 
 section {
-  height: 100vh;
-  width: 80%;
+  /width: max(80%, 600px);
   margin: 0 auto;
+  padding-inline: 30px;
   transition: opacity 0.3s ease-in-out;
   margin-top: 100px;
 }
 
 .sectionZero p {
+  margin: 25px;
   font-size: 70px;
 }
 
 .sectionOne p {
+  margin: 25px;
   font-size: 30px;
   text-align: center;
 }
@@ -141,18 +150,19 @@ section {
 }
 
 .sectionTwo p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
   flex: 1;
 }
 
-.study-img {
+.single-img {
   flex: 1;
   text-align: center;
 }
 
-.study-img img {
-  width: 80%;
+.single-img img {
+  width: min(80%, 500px);
   margin: 25px;
   border-radius: 50px;
 }
@@ -168,6 +178,7 @@ section {
 }
 
 .sectionThree p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
 }
@@ -175,21 +186,11 @@ section {
 .sectionThree .icon {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .sectionThree .icon img {
   height: 80px;
-}
-
-.study-img {
-  flex: 1;
-  text-align: center;
-}
-
-.study-img img {
-  width: 80%;
-  margin: 25px;
-  border-radius: 50px;
 }
 
 /* FOUR */
@@ -199,20 +200,10 @@ section {
 }
 
 .sectionFour p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
   flex: 1;
-}
-
-.app-img {
-  flex: 1;
-  text-align: center;
-}
-
-.app-img img {
-  width: 80%;
-  margin: 25px;
-  border-radius: 50px;
 }
 
 /* FIVE */
@@ -226,6 +217,7 @@ section {
 }
 
 .sectionFive p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
   flex: 1;
@@ -235,6 +227,7 @@ section {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .sectionFive .icon img {
@@ -314,6 +307,7 @@ section {
 }
 
 .sectionSix p {
+  margin: 25px;
   text-align: justify;
   width: 80%;
 }
@@ -329,6 +323,7 @@ section {
 }
 
 .sectionSeven p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
   flex: 1;
@@ -338,6 +333,7 @@ section {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .sectionSeven .icon img {
@@ -351,54 +347,10 @@ section {
 }
 
 .sectionEight p {
+  margin: 25px;
   font-size: 30px;
   text-align: justify;
   flex: 1;
-}
-
-.app-img {
-  flex: 1;
-  text-align: center;
-}
-
-.app-img img {
-  width: 80%;
-  margin: 25px;
-  border-radius: 50px;
-}
-
-/* EIGHT */
-.sectionEight {
-  display: flex;
-  align-items: center;
-}
-
-.sectionEight p {
-  font-size: 30px;
-  text-align: justify;
-  flex: 1;
-}
-
-.app-img {
-  flex: 1;
-  text-align: center;
-}
-
-.app-img img {
-  width: 80%;
-  margin: 25px;
-  border-radius: 50px;
-}
-
-.bootcamp-img {
-  flex: 1;
-  text-align: center;
-}
-
-.bootcamp-img img {
-  width: 80%;
-  margin: 25px;
-  border-radius: 50px;
 }
 
 /* NINE */
@@ -409,6 +361,7 @@ section {
 }
 
 .sectionNine p {
+  margin: 25px;
   font-size: 30px;
   text-align: center;
   flex: 1;
@@ -459,4 +412,51 @@ footer {
   align-items: center;
   background-color: #1c1a19;
   color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text {
+    align-items: flex-start;
+  }
+  .hero-txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-txt h1 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .profile-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  .sectionZero p {
+    font-size: clamp(30px, 5vw, 40px);
+    text-align: center;
+  }
+
+  .sectionOne,
+  .sectionThree,
+  .sectionFive,
+  .sectionSeven {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sectionTwo,
+  .sectionFour,
+  .sectionSix,
+  .sectionEight {
+    display: flex;
+    flex-direction: column;
+  }
 }

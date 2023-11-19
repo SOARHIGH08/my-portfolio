@@ -17,18 +17,10 @@ window.addEventListener("scroll", function () {
 
   if (zero.top <= this.innerHeight * 0.2) {
     liOne.classList.add("showLi");
-    sectionZero.classList.add("hide");
     profilePic.classList.add("hide");
   } else {
     liOne.classList.remove("showLi");
-    sectionZero.classList.remove("hide");
     profilePic.classList.remove("hide");
-  }
-
-  if (one.top <= this.innerHeight * -0.2) {
-    sectionOne.classList.add("hide");
-  } else {
-    sectionOne.classList.remove("hide");
   }
 
   // TWO
@@ -38,10 +30,8 @@ window.addEventListener("scroll", function () {
 
   if (two.top <= this.innerHeight * -0.1) {
     liTwo.classList.add("showLi");
-    sectionTwo.classList.add("hide");
   } else {
     liTwo.classList.remove("showLi");
-    sectionTwo.classList.remove("hide");
   }
 
   if (two.top <= this.innerHeight * 1) {
@@ -54,12 +44,6 @@ window.addEventListener("scroll", function () {
   var sectionThree = document.getElementById("sectionThree");
   var three = sectionThree.getBoundingClientRect();
 
-  if (three.top <= this.innerHeight * -0.1) {
-    sectionThree.classList.add("hide");
-  } else {
-    sectionThree.classList.remove("hide");
-  }
-
   if (three.top <= this.innerHeight * 1) {
     sectionThree.classList.add("toRight");
   } else {
@@ -69,12 +53,6 @@ window.addEventListener("scroll", function () {
   // FOUR
   var sectionFour = document.getElementById("sectionFour");
   var four = sectionFour.getBoundingClientRect();
-
-  if (four.top <= this.innerHeight * -0.1) {
-    sectionFour.classList.add("hide");
-  } else {
-    sectionFour.classList.remove("hide");
-  }
 
   if (four.top <= this.innerHeight * 1) {
     sectionFour.classList.add("toLeft");
@@ -89,10 +67,8 @@ window.addEventListener("scroll", function () {
 
   if (five.top <= this.innerHeight * -0.4) {
     liThree.classList.add("showLi");
-    sectionFive.classList.add("hide");
   } else {
     liThree.classList.remove("showLi");
-    sectionFive.classList.remove("hide");
   }
 
   if (five.top <= this.innerHeight * 1) {
@@ -105,21 +81,9 @@ window.addEventListener("scroll", function () {
   var sectionSix = document.getElementById("sectionSix");
   var six = sectionSix.getBoundingClientRect();
 
-  if (six.top <= this.innerHeight * -1) {
-    sectionSix.classList.add("hide");
-  } else {
-    sectionSix.classList.remove("hide");
-  }
-
   // SEVEN
   var sectionSeven = document.getElementById("sectionSeven");
   var seven = sectionSeven.getBoundingClientRect();
-
-  if (seven.top <= this.innerHeight * -0.2) {
-    sectionSeven.classList.add("hide");
-  } else {
-    sectionSeven.classList.remove("hide");
-  }
 
   if (seven.top <= this.innerHeight * 1) {
     sectionSeven.classList.add("toLeft");
@@ -133,10 +97,8 @@ window.addEventListener("scroll", function () {
   var liFour = document.getElementById("liFour");
 
   if (eight.top <= this.innerHeight * -0.2) {
-    sectionEight.classList.add("hide");
     liFour.classList.add("showLi");
   } else {
-    sectionEight.classList.remove("hide");
     liFour.classList.remove("showLi");
   }
 
