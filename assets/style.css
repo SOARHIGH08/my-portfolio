@@ -18,7 +18,7 @@ header {
 .hero {
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: #e1e1e1;
   color: #2c2b31;
   display: flex;
   flex-direction: column;
