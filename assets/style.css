@@ -43,7 +43,7 @@ header {
   font-size: clamp(40px, 7vw, 120px);
 }
 
-.profile-pic {
+.profile-ic {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -78,11 +78,11 @@ header {
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1;
 }
 
 ul {
+  width: 100vw;
   display: flex;
   list-style: none;
 }
@@ -130,21 +130,21 @@ li {
 section {
   width: 100%;
   margin: 0 auto;
-  padding-inline: 30px;
+  padding-inline: 20px;
   transition: opacity 0.3s ease-in-out;
   margin-top: 100px;
 }
 
 .sectionZero p {
-  margin: 25px;
+  margin-block: 25px;
   font-size: 70px;
 }
 
 /* ONE */
 .sectionOne p {
-  margin: 25px;
-  font-size: 30px;
-  text-align: center;
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 .profession-img {
@@ -164,8 +164,8 @@ section {
 }
 
 .sectionTwo p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
   flex: 1;
 }
@@ -177,7 +177,7 @@ section {
 
 .single-img img {
   width: min(80vh, 500px);
-  margin: 25px;
+  margin-block: 25px;
   border-radius: 50px;
 }
 
@@ -192,8 +192,8 @@ section {
 }
 
 .sectionThree p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
 }
 
@@ -204,7 +204,8 @@ section {
   justify-content: space-evenly;
 }
 .sectionThree .icon img {
-  height: 80px;
+  height: clamp(30px, 5vw, 80px);
+  margin: 5px;
 }
 
 /* FOUR */
@@ -214,8 +215,8 @@ section {
 }
 
 .sectionFour p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
   flex: 1;
 }
@@ -231,8 +232,8 @@ section {
 }
 
 .sectionFive p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
   flex: 1;
 }
@@ -245,7 +246,8 @@ section {
 }
 
 .sectionFive .icon img {
-  height: 80px;
+  height: clamp(30px, 5vw, 80px);
+  margin: 5px;
 }
 
 /* SIX */
@@ -258,6 +260,11 @@ section {
   height: 100%;
 }
 
+.sectionSix h1 {
+  font-size: clamp(25px, 5vw, 30px);
+  margin-bottom: 20px;
+}
+
 .test-img {
   text-align: center;
   position: relative;
@@ -265,13 +272,15 @@ section {
 
 .test-img img {
   width: 100%;
+  box-shadow: 0 0 10px #b1afaf;
+  margin-block: 10px;
 }
 
 .test-img a {
   opacity: 0;
   font-size: 50px;
   color: white;
-  padding-block: 100px;
+  padding-block: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -299,7 +308,7 @@ section {
   content: "Visit Site";
   font-size: 50px;
   color: white;
-  padding-block: 100px;
+  padding-block: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -321,7 +330,7 @@ section {
 }
 
 .sectionSix p {
-  margin: 25px;
+  margin-block: 25px;
   text-align: justify;
   width: 80%;
 }
@@ -337,8 +346,8 @@ section {
 }
 
 .sectionSeven p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
   flex: 1;
 }
@@ -351,7 +360,8 @@ section {
 }
 
 .sectionSeven .icon img {
-  height: 80px;
+  height: clamp(30px, 5vw, 80px);
+  margin: 5px;
 }
 
 /* EIGHT */
@@ -361,8 +371,8 @@ section {
 }
 
 .sectionEight p {
-  margin: 25px;
-  font-size: 30px;
+  margin-block: 25px;
+  font-size: 25px;
   text-align: justify;
   flex: 1;
 }
@@ -371,12 +381,11 @@ section {
 .sectionNine {
   display: flex;
   align-items: center;
-  height: 70vh;
+  height: 45vh;
 }
 
 .sectionNine p {
-  margin: 25px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   flex: 1;
 }
@@ -428,7 +437,19 @@ footer {
   color: white;
 }
 
+footer p {
+  margin-top: 15px;
+}
+
+footer p:nth-child(even) {
+  color: #908c8c;
+}
+
 @media only screen and (max-width: 1000px) {
+  .section-cont {
+    width: 95%;
+  }
+
   .text {
     align-items: flex-start;
   }
@@ -444,9 +465,31 @@ footer {
 
   .profile-pic {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
+    width: 250px;
+  }
+
+  .pic-bg {
+    width: 250px;
+    height: 225px;
+  }
+
+  .pic-cont {
+    height: 280px;
+  }
+
+  .pic-cont img {
+    width: 280px;
+  }
+
+  .profession-img img {
+    margin: 25px 0;
+  }
+
+  .single-img img {
+    border-radius: 0px;
   }
 
   ul {
@@ -454,8 +497,45 @@ footer {
   }
 
   .sectionZero p {
-    font-size: clamp(30px, 5vw, 40px);
+    font-size: clamp(25px, 5vw, 40px);
     text-align: center;
+  }
+
+  .sectionOne p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionTwo p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionThree p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionFour p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionFive p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionSix p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionSeven p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .sectionEight p {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .test-img a,
+  .cofi-img a {
+    font-size: clamp(16px, 5vw, 25px);
   }
 
   .sectionOne,
@@ -472,5 +552,9 @@ footer {
   .sectionEight {
     display: flex;
     flex-direction: column;
+  }
+
+  .sectionSix {
+    width: 100%;
   }
 }
