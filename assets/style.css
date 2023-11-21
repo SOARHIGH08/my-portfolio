@@ -35,12 +35,11 @@ header {
 
 .hero-txt {
   width: 600px;
-
   transition: opacity 0.3s ease-in-out;
 }
 
 .hero-txt h1 {
-  font-size: clamp(40px, 7vw, 120px);
+  font-size: clamp(45px, 7vw, 120px);
 }
 
 .profile-ic {
