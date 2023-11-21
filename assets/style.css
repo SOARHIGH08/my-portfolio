@@ -42,7 +42,7 @@ header {
   font-size: clamp(45px, 7vw, 120px);
 }
 
-.profile-ic {
+.profile-pic {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -111,6 +111,7 @@ li {
 
 .liFour {
   background-color: yellow;
+  color: black;
 }
 
 .nav {
