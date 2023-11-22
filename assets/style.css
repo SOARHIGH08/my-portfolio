@@ -439,6 +439,10 @@ footer p:nth-child(even) {
     margin-top: 80px;
   }
 
+  .logoContainer {
+    position: absolute;
+  }
+
   .profile-pic {
     position: absolute;
     top: 50%;
