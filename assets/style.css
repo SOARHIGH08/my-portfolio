@@ -64,7 +64,7 @@ header {
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
-  bottom: 2px;
+  bottom: 4px;
   right: 50%;
   transform: translate(50%);
 }
@@ -95,22 +95,23 @@ li {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 5px 5px rgba(105, 103, 103, 0.244);
 }
 
 .liOne {
-  background-color: red;
+  background-color: #909090;
 }
 
 .liTwo {
-  background-color: green;
+  background-color: #212121;
 }
 
 .liThree {
-  background-color: blue;
+  background-color: #6b6b6b;
 }
 
 .liFour {
-  background-color: yellow;
+  background-color: #bfbfbf;
   color: black;
 }
 
@@ -261,8 +262,22 @@ section {
 }
 
 .sectionSix h1 {
-  font-size: clamp(25px, 5vw, 30px);
+  font-size: clamp(25px, 5vw, 40px);
   margin-bottom: 20px;
+  background-color: #2e2c2c;
+  color: #dedcdc;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sectionSix h3 {
+  background-color: #363232;
+  color: #dedcdc;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
 }
 
 .test-img {
@@ -273,7 +288,7 @@ section {
 .test-img img {
   width: 100%;
   box-shadow: 0 0 10px #b1afaf;
-  margin-block: 10px;
+  margin-block: 40px;
 }
 
 .test-img a {
@@ -301,6 +316,7 @@ section {
 
 .cofi-img img {
   width: 100%;
+  margin-block: 40px;
 }
 
 .cofi-img a {
@@ -465,23 +481,23 @@ footer p:nth-child(even) {
 
   .profile-pic {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
+    /* width: 250px; */
   }
 
   .pic-bg {
-    width: 250px;
-    height: 225px;
-  }
-
-  .pic-cont {
+    width: 280px;
     height: 280px;
   }
 
+  .pic-cont {
+    height: 300px;
+  }
+
   .pic-cont img {
-    width: 280px;
+    width: 300px;
   }
 
   .profession-img img {
