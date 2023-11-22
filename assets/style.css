@@ -47,7 +47,7 @@ header {
   position: fixed;
   top: 0%;
   right: 0%;
-  margin: 20px;
+  padding: 10px;
   font-weight: bold;
 }
 
@@ -441,6 +441,10 @@ footer p:nth-child(even) {
 
   .logoContainer {
     position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    background-color: #b1afaf;
   }
 
   .profile-pic {
