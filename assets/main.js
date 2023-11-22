@@ -6,6 +6,7 @@ window.addEventListener("scroll", function () {
   var heroText = document.getElementById("heroText");
   var sectionOne = document.getElementById("sectionOne");
   var profilePic = document.getElementById("profilePic");
+  var logoContainer = document.getElementById("logoContainer");
   var one = sectionOne.getBoundingClientRect();
   var liOne = document.getElementById("liOne");
 
@@ -18,9 +19,11 @@ window.addEventListener("scroll", function () {
   if (zero.top <= this.innerHeight * 0.2) {
     liOne.classList.add("showLi");
     profilePic.classList.add("hide");
+    logoContainer.classList.add("hide");
   } else {
     liOne.classList.remove("showLi");
     profilePic.classList.remove("hide");
+    logoContainer.classList.remove("hide");
   }
 
   // TWO

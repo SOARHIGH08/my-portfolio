@@ -42,19 +42,6 @@ header {
   font-size: clamp(45px, 7vw, 120px);
 }
 
-.logoContainer {
-  display: flex;
-  position: fixed;
-  top: 0%;
-  right: 0%;
-  margin: 20px;
-  font-weight: bold;
-}
-
-.logoContainer h1:nth-child(odd) {
-  color: #6b6b6b;
-}
-
 .profile-pic {
   position: fixed;
   top: 30%;
@@ -172,22 +159,12 @@ section {
 }
 
 /* TWO */
-.sectionTwo,
-.sectionThree,
-.sectionFour,
-.sectionFive,
-.sectionSeven,
-.sectionEight {
+.sectionTwo {
   display: flex;
   align-items: center;
 }
 
-.sectionTwo p,
-.sectionThree p,
-.sectionFour p,
-.sectionFive p,
-.sectionSeven p,
-.sectionEight p {
+.sectionTwo p {
   margin-block: 25px;
   font-size: 25px;
   text-align: justify;
@@ -199,20 +176,6 @@ section {
   text-align: center;
 }
 
-iconify-icon {
-  font-size: 40px;
-  color: #5a5858;
-}
-
-iconify-icon:hover {
-  color: #363232;
-}
-
-.svg-icons-cont {
-  margin: 20px;
-  text-align: center;
-}
-
 .single-img img {
   width: min(80vh, 500px);
   margin-block: 25px;
@@ -220,9 +183,19 @@ iconify-icon:hover {
 }
 
 /* THREE */
+.sectionThree {
+  display: flex;
+  align-items: center;
+}
 
 .sectionThree div {
   flex: 1;
+}
+
+.sectionThree p {
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 .sectionThree .icon {
@@ -237,10 +210,32 @@ iconify-icon:hover {
 }
 
 /* FOUR */
+.sectionFour {
+  display: flex;
+  align-items: center;
+}
+
+.sectionFour p {
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
+  flex: 1;
+}
 
 /* FIVE */
+.sectionFive {
+  display: flex;
+  align-items: center;
+}
 
 .sectionFive div {
+  flex: 1;
+}
+
+.sectionFive p {
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
   flex: 1;
 }
 
@@ -262,16 +257,15 @@ iconify-icon:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 70%;
   height: 100%;
-  background-color: #e1e1e1;
-  padding: 40px 10 px;
 }
 
 .sectionSix h1 {
   font-size: clamp(25px, 5vw, 40px);
   margin-bottom: 20px;
-  color: #2e2c2c;
+  background-color: #2e2c2c;
+  color: #dedcdc;
   width: 300px;
   text-align: center;
   padding: 10px;
@@ -330,8 +324,19 @@ iconify-icon:hover {
 }
 
 /* SEVEN */
+.sectionSeven {
+  display: flex;
+  align-items: center;
+}
 
 .sectionSeven div {
+  flex: 1;
+}
+
+.sectionSeven p {
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
   flex: 1;
 }
 
@@ -345,6 +350,19 @@ iconify-icon:hover {
 .sectionSeven .icon img {
   height: clamp(30px, 5vw, 80px);
   margin: 5px;
+}
+
+/* EIGHT */
+.sectionEight {
+  display: flex;
+  align-items: center;
+}
+
+.sectionEight p {
+  margin-block: 25px;
+  font-size: 25px;
+  text-align: justify;
+  flex: 1;
 }
 
 /* NINE */
@@ -398,7 +416,7 @@ iconify-icon:hover {
 }
 
 footer {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
