@@ -44,15 +44,19 @@ header {
 
 .logoContainer {
   display: flex;
+  justify-content: flex-end;
   position: fixed;
   top: 0%;
   right: 0%;
   padding: 10px;
   font-weight: bold;
+  background-color: #909090;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(105, 103, 103, 0.244);
 }
 
-.logoContainer h1:nth-child(odd) {
-  color: #6b6b6b;
+.logoContainer h3:nth-child(odd) {
+  color: #ccc;
 }
 
 .profile-pic {
@@ -106,6 +110,7 @@ li {
   font-family: "Poppins";
   font-weight: 400;
   opacity: 0;
+  padding: 6px;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
   box-shadow: 0 5px 5px rgba(105, 103, 103, 0.244);
@@ -444,7 +449,6 @@ footer p:nth-child(even) {
     top: 0%;
     left: 0%;
     right: 0;
-    background-color: #b1afaf;
   }
 
   .profile-pic {
